@@ -1,2 +1,3 @@
-# the-new-stack-astro-react-sprinkling
-A simple Astro site with a sprinkling of React
+# How to Use Astro With a Sprinkling of React
+
+...

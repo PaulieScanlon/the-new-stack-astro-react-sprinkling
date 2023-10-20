@@ -1,0 +1,10 @@
+---
+import Main from '../layouts/main.astro';
+
+import ContactForm from '../components/contact-form';
+---
+
+<Main title='Contact'>
+  <h1>Contact</h1>
+  <ContactForm client:only='react' />
+</Main>

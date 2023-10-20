@@ -1,0 +1,41 @@
+{
+  "name": "the-new-stack-astro-react-sprinkling",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A simple Astro site with a sprinkling of React",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/the-new-stack-astro-react-sprinkling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/the-new-stack-astro-react-sprinkling/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/the-new-stack-astro-react-sprinkling#readme",
+  "dependencies": {
+    "@astrojs/netlify": "^3.0.3",
+    "@astrojs/react": "^3.0.3",
+    "@astrojs/tailwind": "^5.0.2",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^3.3.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-hook-form": "^7.47.0",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}

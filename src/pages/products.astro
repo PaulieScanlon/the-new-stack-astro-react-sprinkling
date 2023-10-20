@@ -1,0 +1,32 @@
+---
+export const prerender = false;
+
+import Main from '../layouts/main.astro';
+
+const request = await fetch('https://dummyjson.com/products?limit=10');
+const data = await request.json();
+---
+
+<Main title='Products'>
+  <h1>Products</h1>
+  <ul class='m-0 p-0 list-none grid sm:grid-cols-2 gap-3 sm:gap-6'>
+    {
+      data.products.map((product) => {
+        const { title, description, thumbnail } = product;
+
+        return (
+          <li class='m-0 p-0 border border-zinc-200'>
+            <div
+              class='h-64 bg-cover bg-center m-0 border-b border-b-zinc-200'
+              style={`background-image: url(${thumbnail})`}
+            />
+            <div class='p-4'>
+              <strong>{title}</strong>
+              <p>{description}</p>
+            </div>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Main>
